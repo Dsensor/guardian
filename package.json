@@ -1,0 +1,15 @@
+{
+  "name": "guardian",
+  "version": "0.0.1",
+  "description": "Command Line tool interface to LKN",
+  "author": "James Littlejohn",
+  "engines": {
+    "node": ">=7.9.0"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "external-ip": "^0.2.4",
+    "inquirer": "^1.1.2"
+  }
+}
