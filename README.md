@@ -15,9 +15,14 @@ A node.js command-line has been implemented:
 
 Install
 -------
+1.  clone this repository
+2.  sudo npm Install
+3.  node index.js  start
 
-
-
+COMMANDS(no functionality added yet)
+lkn -- connect to network
+consensus -- create new consensus science cycle
+exit -- close the commandline
 
 Introduction Slides and documentation
 =====================================
