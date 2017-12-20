@@ -21,6 +21,7 @@ Install
 
 COMMANDS(no functionality added yet)
 lkn -- connect to network
+dialer -- start connection to listener
 consensus -- create new consensus science cycle
 exit -- close the commandline
 

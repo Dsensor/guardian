@@ -3,6 +3,7 @@
 const program = require('commander');
 const inquirer = require('inquirer');
 const getIP = require('external-ip')();
+const LKNconnect = require('./lkn-libptop.js');
 
 program
     .version('0.0.1')
@@ -46,6 +47,11 @@ console.log('original exit');
 console.log('connecting to Living Knowledge Network');
       lknConnect(program.address, program.port);
     }
+    else if(answers.incommand == 'dialer')
+    {
+console.log('Dailing up LKN');
+      lknDialer(program.address, program.port);
+    }
     else if(answers.incommand == 'consensus')
     {
 console.log('starting consensus science cycle');
@@ -68,6 +74,18 @@ function lknConnect (addressIn, portIn) {
 console.log(addressIn);
 console.log(portIn);
   var portnumber = parseInt(portIn);
+  var liveLKN = new LKNconnect('listen');
+
+  ask();
+
+};
+
+function lknDialer (addressIn, portIn) {
+//console.log(addressIn);
+//console.log(portIn);
+  var portnumber = parseInt(portIn);
+  var liveLKNdialer = new LKNconnect('dialer');
+
   ask();
 
 };
